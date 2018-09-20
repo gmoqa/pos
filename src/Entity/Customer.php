@@ -24,7 +24,7 @@ class Customer
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $SecondName;
+    private $secondName;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -34,7 +34,7 @@ class Customer
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $SecondLastName;
+    private $secondLastName;
 
     /**
      * @ORM\Column(type="string", length=255)
@@ -65,12 +65,12 @@ class Customer
 
     public function getSecondName(): ?string
     {
-        return $this->SecondName;
+        return $this->secondName;
     }
 
-    public function setSecondName(string $SecondName): self
+    public function setSecondName(string $secondName): self
     {
-        $this->SecondName = $SecondName;
+        $this->secondName = $secondName;
 
         return $this;
     }
@@ -89,12 +89,12 @@ class Customer
 
     public function getSecondLastName(): ?string
     {
-        return $this->SecondLastName;
+        return $this->secondLastName;
     }
 
-    public function setSecondLastName(string $SecondLastName): self
+    public function setSecondLastName(string $secondLastName): self
     {
-        $this->SecondLastName = $SecondLastName;
+        $this->secondLastName = $secondLastName;
 
         return $this;
     }

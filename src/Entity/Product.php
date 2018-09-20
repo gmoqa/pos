@@ -34,7 +34,7 @@ class Product
     /**
      * @ORM\ManyToOne(targetEntity="App\Entity\Brand", inversedBy="products")
      */
-    private $Brand;
+    private $brand;
 
     /**
      * @ORM\Column(type="datetime")
@@ -89,12 +89,12 @@ class Product
 
     public function getBrand(): ?Brand
     {
-        return $this->Brand;
+        return $this->brand;
     }
 
-    public function setBrand(?Brand $Brand): self
+    public function setBrand(?Brand $brand): self
     {
-        $this->Brand = $Brand;
+        $this->brand = $brand;
 
         return $this;
     }
